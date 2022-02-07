@@ -1,0 +1,42 @@
+{
+  "name": "my-travel-journal",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.3.1",
+    "@mui/material": "^5.3.1",
+    "@react-navigation/drawer": "^6.1.8",
+    "@react-navigation/native": "^6.0.6",
+    "expo": "~44.0.0",
+    "expo-status-bar": "~1.2.0",
+    "react": "17.0.1",
+    "react-datepicker": "^4.6.0",
+    "react-dom": "17.0.1",
+    "react-native": "0.64.3",
+    "react-native-gesture-handler": "~2.1.0",
+    "react-native-paper": "^4.11.2",
+    "react-native-reanimated": "~2.3.1",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.10.2",
+    "react-native-vector-icons": "^9.0.0",
+    "react-native-web": "0.17.1",
+    "reinput": "^3.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9"
+  },
+  "react-native": {
+    "./dist/cache.cjs.js": "./dist/cache.cjs.js",
+    "./dist/cache.esm.js": "./dist/cache.esm.js"
+  },
+  "private": true
+}
