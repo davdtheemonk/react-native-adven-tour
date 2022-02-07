@@ -57,14 +57,14 @@ Adven-tour v1.0.0 © 2022 David Mugalla.
 Usage : 
 
 #### Clone the package
-```git clone Adven-Tour ```
+``` git clone https://www.github.com/davdtheemonk/Adven-Tour ```
 
-
+``` cd Adven-Tour ```
 #### Install dependancies
-```npm install``` 
+``` npm install ``` 
 
 #### Start App
-```npm start ``` or ``` yarn start ``` 
+``` npm start ``` or ``` yarn start ``` 
 
 
 
