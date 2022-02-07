@@ -22,10 +22,10 @@ Adven-tour v1.0.0 © 2022 David Mugalla.
  <tbody>
    <tr>
      <td aligin="center">
-       <img src="./screenshots/3.png" style="max-width: 70%"/>
+       <img src="./screenshots/3.png" style="max-width: 100%"/>
      </td>
           <td aligin="center">
-       <img src="./screenshots/9.png" style="max-width: 70%"/>
+       <img src="./screenshots/9.png" style="max-width: 100%"/>
      </td>
    </tr>
   </tbody>
@@ -41,10 +41,10 @@ Adven-tour v1.0.0 © 2022 David Mugalla.
  <tbody>
    <tr>
      <td aligin="center">
-       <img src="./screenshots/4.png" style="max-width: 70%"/>
+       <img src="./screenshots/4.png" style="max-width: 100%"/>
      </td>
           <td aligin="center">
-       <img src="./screenshots/2.png" style="max-width: 70%"/>
+       <img src="./screenshots/2.png" style="max-width: 100%"/>
      </td>
    </tr>
   </tbody>
