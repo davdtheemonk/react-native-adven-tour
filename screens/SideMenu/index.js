@@ -17,6 +17,7 @@ import {
 } from "react-native-paper"
 
 import Icon from "react-native-vector-icons/MaterialCommunityIcons"
+import Icons from "react-native-vector-icons/MaterialIcons"
 import { ScrollView } from "react-native"
 export default function SideMenu(props){
     return(
@@ -51,6 +52,20 @@ export default function SideMenu(props){
                     onPress={()=>props.navigation.navigate('Home')}
                     labelStyle={{color:"white",fontSize:18,fontFamily:"monospace"}}
                     label="Adventures"/>
+                         <DrawerItem
+                    icon={({color,size})=>(
+                        <Icons
+                        name="settings"
+                        color="white"
+                        size={30}
+
+                        />
+    )}  labelStyle={{color:"white",fontSize:18,fontFamily:"monospace"}}
+                    label="Settings"
+                    onPress={()=>{
+                        props.navigation.navigate('Settings')
+                    }}/>
+          
             
                <DrawerItem
                     icon={({color,size})=>(

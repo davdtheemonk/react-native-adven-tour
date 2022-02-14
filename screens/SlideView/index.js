@@ -5,7 +5,6 @@ import { TextInput, Image } from 'react-native';
 import { IconButton, Portal, Colors } from "react-native-paper";
 import styles from "./style"
 import { Button } from "react-native-paper"
-import DatePicker from "react-datepicker";
 
 import Reinput from 'reinput'
 

@@ -16,7 +16,6 @@ import { Provider } from 'react-native-paper';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import {Button} from "react-native-paper"
-import me from "../../assets/me.jpeg"
 import Icon from "react-native-vector-icons/MaterialCommunityIcons"
 import room from"../../assets/hut2.jpeg"
 
@@ -44,10 +43,10 @@ const [close,closeBtn] = useState(true);
    
  
 
-      <Image style={{height:150,width:'100%',position:"absolute",left:0,right:0,top:0,resizeMode:"cover"}}source={room}></Image>
+      
       
       <View style={styles.bttn}>
-       <IconButton icon="menu" onPress={()=>{
+       <IconButton icon="menu" style={{marginTop:20,marginLeft:0}} onPress={()=>{
           props.navigation.openDrawer()
          
           closeBtn(false)
@@ -75,6 +74,8 @@ const [close,closeBtn] = useState(true);
                         />
 <Button style={{marginTop:40}}size={90}contentStyle={{ width: 250 }}  color="wheat" icon="linkedin" mode="contained" >Follow Me</Button>
 <Button style={{marginTop:10}}size={90}contentStyle={{ width: 250 }}  color="lightblue" icon="email" mode="contained" >Send Feedback</Button>
+<Button style={{marginTop:10}}size={90}contentStyle={{ width: 250 }}  color="azure" icon="tea" mode="contained" >Buy Me coffee</Button>
+
 <Caption style={{color:"grey",marginTop:45,fontSize:15}}> © 2022 David Mugalla</Caption>
 
 
@@ -133,14 +134,20 @@ const styles = StyleSheet.create({
     color:'white',
     fontWeight:'bold',
     fontSize:20,
-    marginTop:9,
+    marginTop:25,
     height:60,
-    marginLeft:15
+    marginLeft:10,
+    fontFamily:"monospace"
 
   },
   bttn:{
-    maxHeight:20,
-    marginTop:40
+    padding:20,
+    paddingBottom:7,
+      marginTop:0,
+      display:"flex",
+      flexDirection:"row",
+      height:80,
+      backgroundColor:"#393a39"
   },
   modalView:{
     position:'absolute',

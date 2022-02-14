@@ -4,7 +4,7 @@ import { StyleSheet,View,TextInput,Modal,Text, ScrollView } from 'react-native';
 import Header from '../Header';
 import { Image } from 'react-native';
 import house from "../../assets/afr.jpg"
-import {FAB, IconButton} from "react-native-paper"
+import {FAB, IconButton,Portal} from "react-native-paper"
 import { TouchableOpacity } from 'react-native'
 import {useState } from 'react';
 import Card from '../Card';
@@ -76,7 +76,13 @@ export default function Home(props) {
 
 
        <View style={styles.container}>
-       {modal==false &&<View style={styles.btn}>
+    
+         
+   
+   
+  
+      <Portal>
+      {modal==false &&<View style={styles.btn}>
      
      <TouchableOpacity>
   <FAB style={{backgroundColor:"rgb(209, 144, 144)"}} color='#393a39' icon="pencil" onPress={() => {
@@ -87,12 +93,7 @@ export default function Home(props) {
 </TouchableOpacity>
 
 </View>}
-         
-   
-   
-  
-
-   
+</Portal>
  
 
       <Image style={{height:150,width:'100%',position:"absolute",left:0,right:0,top:0,resizeMode:"cover"}}source={house}></Image>
@@ -129,9 +130,14 @@ export default function Home(props) {
         <ScrollView contentContainerStyle={{padding:16}}/>
       </SlideView>
       
-{data}
+
+      <ScrollView>
+        {data}
+      </ScrollView>
+
    
       <StatusBar style="auto"/>
+      
       
   
       
